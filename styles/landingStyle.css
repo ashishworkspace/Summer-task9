@@ -45,7 +45,7 @@ body{
     font-size: 40px;
     text-align: center;
 }
-#outerBound{
+.outerBound{
     padding-top: 30px;
     height: 250px;
     width: 400px;
@@ -74,8 +74,25 @@ body{
     outline: none;
 
 }
-/* #main{
-    width: 60%;
+#customButton{
+    border: none;
+    background-color: #03A9FA;
+    color: black;
+    width: 100px;
+    height: 40px;
+    padding-left: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+
+}
+#buttonPosition{
+    position: absolute;
+    left: 220px;
+}
+ #main{
+    width: 40%;
     margin: auto;
 }
 #main input,button{
@@ -107,6 +124,7 @@ body{
 #main input:focus{
     outline: none;
 }
+/*
 #output{
     text-align: center;
 }

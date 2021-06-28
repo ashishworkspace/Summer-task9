@@ -11,18 +11,27 @@
     <div id="label">
         <span id="icon"><img src="assets/images/kubernetesLogo.png" ></span>
         <span id="heading">kubernetes</span>
+        <span>    
+            <div id="main">
+                <input type="text" id="searchBox" placeholder="Kubernetes Command"/>
+                <button onclick="sync();">Press</button>
+            </div>
+        </span>
     </div>
     <div id="row">
         <div class="card">
             <div class="tag">
                 pods
             </div>
-            <div id="outerBound">
+            <div class="outerBound">
                 <div class="inputBox" >
                     <input type="text" name="" placeholder="Name of the Pod" >
                 </div>
                 <div class="inputBox" >
                     <input type="text" name="" placeholder="Name of the Image">
+                </div>
+                <div id="buttonPosition">
+                    <button id="customButton">Launch</button>
                 </div>
             </div>
         </div>
@@ -44,10 +53,7 @@
     </div> 
 
     <!-- </div>
-    <div id="main">
-        <input type="text" id="searchBox" placeholder="Docker command"/>
-        <button onclick="sync();">SEARCH</button>
-    </div>
+
     <pre>
     <div id="container">Output</div>
     </pre> -->
