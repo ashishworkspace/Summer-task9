@@ -11,12 +11,6 @@
     <div id="label">
         <span id="icon"><img src="assets/images/kubernetesLogo.png" ></span>
         <span id="heading">kubernetes</span>
-        <span>    
-            <div id="main">
-                <input type="text" id="searchBox" placeholder="Kubernetes Command"/>
-                <button onclick="sync();">Press</button>
-            </div>
-        </span>
     </div>
     <div id="row">
         <div class="card">
@@ -30,32 +24,111 @@
                 <div class="inputBox" >
                     <input type="text" name="" placeholder="Name of the Image">
                 </div>
-                <div id="buttonPosition">
-                    <button id="customButton">Launch</button>
+                <div class="buttonPosition">
+                    <button class="customButton">Launch</button>
                 </div>
             </div>
+            <div id="outerBound2"class="outerBound">
+                <div id="buttonPosition2" class="buttonPosition">
+                    <button id="customButton2" class="customButton">List All Pods</button>
+                </div>
+            </div>
+            <div id="outerBound5"class="outerBound">
+                <p>
+                    <p id="init">Code:</p>
+                    <p>kubectl create  {podName} --image = {imageName} </p>
+                </p>
+            </div>
+
+            
         </div>
         <div class="card">
             <div class="tag">
                 deployment
+            </div>
+            <div id="outerBound3" class="outerBound">
+                <div class="inputBox" >
+                    <input type="text" name="" placeholder="Name of the Deployment" >
+                </div>
+                <div class="inputBox" >
+                    <input type="text" name="" placeholder="Name of the Image">
+                </div>
+                <div class="inputBox" >
+                    <input type="text" name="" placeholder="Name of Replica">
+                </div>
+                <div class="buttonPosition">
+                    <button class="customButton">Deploy</button>
+                </div>
+            </div>
+            <div id="outerBound4"class="outerBound">
+                <p>
+                    <p id="init">Code:</p>
+                    <p>kubectl create deployment {deploymentName} --image = {imageName} </p>
+                </p>
             </div>
         </div>
         <div class="card">
             <div class="tag">
                 expose
             </div>
+            <div id="outerBound3" class="outerBound">
+                <div class="inputBox" >
+                    <input type="text" name="" placeholder="Name of the Deployment" >
+                </div>
+                <div>
+                    <div class="inputBox" >
+                        <input type="text" name="" placeholder="Enter the Port Number">
+                    </div>
+                </div>
+         
+                <div class="inputBox" >
+                    <input type="text" name="" placeholder="LoadBalancer Type">
+                </div>
+                <div class="buttonPosition">
+                    <button class="customButton">Expose</button>
+                </div>
+            </div>
+            <div id="outerBound4"class="outerBound">
+                <p>
+                    <p id="init">Code:</p>
+                    <p>kubectl expose deployment {deploymentName} --port {portNumber} --type={loadbalancerType} </p>
+                </p>
+            </div>
         </div>
         <div class="card">
             <div class="tag">
                 remove
             </div>
+            <div id="outerBound3" class="outerBound">
+                <div class="inputBox" >
+                    <input type="text" name="" placeholder="Name of the type" >
+                </div>
+
+                <div class="buttonPosition">
+                    <button class="customButton">Delete</button>
+                </div>
+            </div>
+            <div id="outerBound4"class="outerBound">
+                <p>
+                    <p id="init">Code:</p>
+                    <p>kubectl delete deployment/pod/service {deploymentName/podname/service}</p>
+                </p>
+            </div>
         </div>
+        
     </div> 
-
-    <!-- </div>
-
+    <div>
+        <span>    
+            <div id="main">
+                <input type="text" id="searchBox" placeholder="Kubernetes Command"/>
+                <button onclick="sync();">Press</button>
+            </div>
+        </span>
+    </div>
+<div>
     <pre>
-    <div id="container">Output</div>
-    </pre> -->
+        <div id="baseContainer">Output</div>
+    </pre>
+</div>
 </body>
 </html>

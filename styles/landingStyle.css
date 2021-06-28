@@ -17,7 +17,7 @@ body{
 
 #heading {
     padding-left: 10px;
-    color: #03a9fa;
+    color: rgb(172, 172, 172);
     font-family: ubuntu_bold;
     font-size: 45px;
     text-align: left;
@@ -28,10 +28,25 @@ body{
     padding: 10px;
 }
 
+p{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(172, 172, 172);
+    word-spacing: 3px;
+    letter-spacing: 0.4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p#init{
+    padding-left: 20px;
+    padding-bottom: 5px;
+    text-align: start;
+    left: 10px;
+}
 
 .card{
     width: 450px;
-    height: 600px;
+    height: 620px;
     background-color: rgb(20, 20, 20);
     margin: 10px;
     border-radius: 20px;
@@ -51,7 +66,24 @@ body{
     width: 400px;
     background-color: rgb(17, 17, 17);
     position: relative;
-    left: 25px;    
+    left: 25px;  
+    margin-bottom:20px ;  
+}
+#outerBound2{
+    height: 100px;
+}
+
+#outerBound3{
+    height: 300px;
+}
+
+#outerBound4{
+    padding-top: 0px;
+    height: 180px;
+}
+#outerBound5{
+    padding-top: 0px;
+    height: 130px;
 }
 .inputBox{
     text-align: center;
@@ -59,24 +91,28 @@ body{
     
 }
 .inputBox input{
-    height: 40px;
+    height: 45px;
     cursor: crosshair;
-    background-color: black;
+    background-color: rgb(172, 172, 172);
     border-radius: 2px;
     width: 250px;
-    color: white;
+    color: black ;
     padding: 10px;
     border: none ;
     margin: 10px;
     
 }
+.inputBox input::placeholder{
+    color: black;
+    font-size: 15px;
+}
 .inputBox input:focus{
     outline: none;
 
 }
-#customButton{
+.customButton{
     border: none;
-    background-color: #03A9FA;
+    background-color: rgb(172, 172, 172);
     color: black;
     width: 100px;
     height: 40px;
@@ -85,33 +121,44 @@ body{
     text-align: center;
     position: relative;
     margin-top: 10px;
-
 }
-#buttonPosition{
+#customButton2{
+    width: 250px;
+}
+
+.buttonPosition{
     position: absolute;
     left: 220px;
 }
+#buttonPosition2{
+    position: absolute;
+    left: 70px;
+}
+
  #main{
-    width: 40%;
+    width: 50%;
     margin: auto;
+    margin-top: 20px;
 }
 #main input,button{
+    height: 70px;
     width:75%;
-    border: 2px solid black;
+    border: 2px solid #111111;
     border-right: 0px;
     font-size: 18px;
     padding: 12px;
     background: transparent;
-    color: black;
+    color: #111111;
+    border-radius: 1px;
 }
 #main input{
-    background-color: black;
+    background-color: #111111;
     color: white;
 }
 #main button{
     width: 25%;
-    background:black;
-    color: white;
+    background: #111111;
+    color: rgb(104, 104, 104);
     float: right;
     border-left: 0px;
 }
@@ -124,11 +171,11 @@ body{
 #main input:focus{
     outline: none;
 }
-/*
+
 #output{
     text-align: center;
 }
-div#container{
+div#baseContainer{
     margin-left: 20%;
     font-size: 17px;
     padding: 20px;
@@ -137,7 +184,7 @@ div#container{
     max-width: 60%;
     max-height: 100%;
     padding-bottom: 30px;
-} */
+}
 
 
 @font-face {
@@ -145,7 +192,3 @@ div#container{
     src: url(../assets/fonts/Ubuntu-Bold.ttf);
 }
 
-@font-face {
-    font-family: "RadishPersonal-vmE5Z";
-    src: url(../assets/fonts/RadishPersonal-vmE5Z.otf);
-}
