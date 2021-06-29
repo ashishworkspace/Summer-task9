@@ -135,7 +135,7 @@ p#init{
     left: 70px;
 }
 
- #main{
+#main{
     width: 50%;
     margin: auto;
     margin-top: 20px;
@@ -180,7 +180,7 @@ div#baseContainer{
     font-size: 17px;
     padding: 20px;
     color: white;
-    background-color: black;
+    background-color: #0e0d0d;
     max-width: 60%;
     max-height: 100%;
     padding-bottom: 30px;
